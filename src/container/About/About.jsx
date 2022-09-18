@@ -14,12 +14,7 @@ const abouts = [
 const About = () => {
   return (
     <>
-      <h2 className="head-text">
-        Eu sei que
-        <span>Um bom Design</span>
-        <br />
-        significa
-        <span>Um bom Produto</span>
+      <h2 className="head-text">Eu sei que <span>Um bom Código</span><br />significa <span>Um bom Produto</span>
       </h2>
 
       <div className="app__profiles">
