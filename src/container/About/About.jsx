@@ -1,17 +1,20 @@
 import React, { useState, useEffect } from 'react'
+import { urlFor, client } from '../../client'
 import { motion } from 'framer-motion'
 
-import { images } from '../../constants'
 import './About.scss'
 
-const abouts = [
-  { title: 'Front-End', description: 'Eu sou um bom desenvolvedor web.', imgUrl: images.about01 },
-  { title: 'Back-End', description: 'Eu sou um bom desenvolvedor web.', imgUrl: images.about02 },
-  { title: 'UI/UX', description: 'Eu sou um bom desenvolvedor web.', imgUrl: images.about03 },
-  { title: 'Animações Web', description: 'Eu sou um bom desenvolvedor web.', imgUrl: images.about04 },
-]
-
 const About = () => {
+  const [abouts, setAbouts] = useState([]);
+
+  useEffect(() => {
+    const query = '*[_type == "abouts"]';
+
+    client.fetch(query)
+      .then((data) => setAbouts(data))
+  }, []);
+  
+
   return (
     <>
       <h2 className="head-text">Eu sei que <span>Um bom Código</span><br />significa <span>Um bom Produto</span>
