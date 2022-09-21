@@ -1,9 +1,13 @@
-<svg width="511" height="511" viewBox="0 0 511 511" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="255.5" cy="255.5" r="255.5" fill="url(#paint0_linear_615_28)"/>
-<defs>
-<linearGradient id="paint0_linear_615_28" x1="434.452" y1="427.308" x2="63.2796" y2="56.1352" gradientUnits="userSpaceOnUse">
-<stop stop-color="#C0C8D5"/>
-<stop offset="1" stop-color="#BDC6D2" stop-opacity="0"/>
-</linearGradient>
-</defs>
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511 511" width="511" height="511">
+	<title>circle-svg</title>
+	<defs>
+		<linearGradient id="g1" x1="434.5" y1="427.3" x2="63.3" y2="56.1" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#d5c0c0"/>
+			<stop offset="1" stop-color="#d5c0c0" stop-opacity="0"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { fill: url(#g1) } 
+	</style>
+	<path id="Layer" class="s0" d="m255.5 511c-141.3 0-255.5-114.2-255.5-255.5 0-141.3 114.2-255.5 255.5-255.5 141.3 0 255.5 114.2 255.5 255.5 0 141.3-114.2 255.5-255.5 255.5z"/>
 </svg>

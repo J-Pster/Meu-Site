@@ -1,4 +1,4 @@
-#home {
+#inicio {
   position: relative;
   background: url('../../assets/bgIMG.png');
   background-size: cover;
@@ -11,6 +11,10 @@
     .copyright {
       display: none;
     }
+  }
+
+  .heroPadding {
+    padding: 2rem 2rem 0 2rem !important;
   }
 }
 
@@ -38,6 +42,7 @@
 .app__header-info {
   flex: 0.65;
   display: flex;
+  padding-top: 2rem;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -58,7 +63,7 @@
 
   .badge-cmp, .tag-cmp {
     padding: 1rem 2rem;
-    border: var(--white-color);
+    background-color: var(--white-color);
     border-radius: 15px;
     flex-direction: row;
     width: auto;
@@ -69,12 +74,18 @@
   .tag-cmp {
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 3rem;
+    margin-top: 1rem;
 
     p {
       width: 100%;
       text-transform: uppercase;
       text-align: right;
+    }
+  }
+
+  .badge-cmp {
+    h1 {
+      font-size: 2rem;
     }
   }
 
@@ -89,6 +100,11 @@
   @media screen and (max-width: 1200px) {
     justify-content: flex-start;
     align-items: flex-start;
+  }
+
+  @media screen and (max-width: 600px) {
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -127,8 +143,8 @@
   }
 
   div:nth-child(3) {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
   }
 
   @media screen and (min-width: 2000px) {
@@ -148,8 +164,26 @@
     }
   }
 
+  @media screen and (max-width: 720px) {
+    div:nth-child(1) {
+      width: 80px;
+      height: 80px;
+    }
+  
+    div:nth-child(2) {
+      margin: 1.75rem;
+      width: 100px;
+      height: 100px;
+    }
+  
+    div:nth-child(3) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
   @media screen and (max-width: 1200px) {
-    widrh: 100%;
+    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 0;
