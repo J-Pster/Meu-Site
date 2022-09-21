@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import ReactTooltip from 'react-tooltip'
 
-import { AppWrap } from '../../wrapper';
+import { AppWrap, MotionWrap } from '../../wrapper';
 import { urlFor, client } from '../../client';
 
 import './Skills.scss'
@@ -40,7 +40,7 @@ const Skills = () => {
               className="app__skills-item app__flex"
               key={skill.name}
             >
-              <div className="app__flex" style={{backgroundClip: skill.bgColor}}>
+              <div className="app__flex" style={{backgroundColor: skill.bgColor}}>
                 <img src={urlFor(skill.icon)} alt={skill.name}/>
               </div>
               <h2 className="p-text">{skill.name}</h2>
@@ -91,4 +91,8 @@ const Skills = () => {
   )
 }
 
-export default Skills
+export default AppWrap(
+  MotionWrap(Skills, 'app__skills'), 
+  'skills',
+  "app__whitebg"
+);
