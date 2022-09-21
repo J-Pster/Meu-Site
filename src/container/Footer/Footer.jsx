@@ -70,7 +70,7 @@ const Footer = () => {
       </div>
       ) : (
         <div>
-            <h3 className="head-text">Obrigado por entrar em contato!</h3>
+            <h3 className="p-text">Obrigado por entrar em contato!</h3>
         </div>
       )}
 
